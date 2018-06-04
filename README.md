@@ -4,9 +4,9 @@
 
 There are three parts to the project, each handled by a separate neural network:
 
-1. Location model: locate face in an image; sliding window
+1. Face detection model: locate face in an image; sliding window
 2. Keypoint model: cut the box of a face image, locate facial features and rotate the face. This is necessary because face recognition models are sensitive and image location noise must be minimized
-3. Classification model: Extract features using a model pre-trained on faces, and feed these features into a classification model. Train the model and identify individuals. 
+3. Face recognition (classification) model: Extract features using a model pre-trained on faces, and feed these features into a classification model. Train the model and identify individuals. 
 
 
 While this is a guided project done as part of an advanced convolutional networks course, it contained minimal instructions and no starter code and required independent decision making and an iterative approach to get all elements work well together. None of the models performed sufficiently well as built according to the guidance, and needed to be further enhanced to achieve better performance.
