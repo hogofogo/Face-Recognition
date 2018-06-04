@@ -23,7 +23,7 @@ Classification model: extract features using model pre-trained on faces (the arc
 
 ## Data cleaning
 
-The major problem I dealt with was the inputs and predictions inconsistencies. For example, input files came in different formats and with different ratios of face image to the overall image. This problem became too significant for video classification to require a separate procedure to address it. For the video classification, I wrote a utility evaluating the quality of prediction and picking the resolution corresponding to the best prediction.
+The major problem I dealt with was the inputs and predictions inconsistencies. For example, input files came in different formats and with different ratios of face image to the overall image. This problem became too significant for video classification to require a separate procedure to address it. For the video classification, I wrote a utility evaluating the prediction confidence for several resolutions, and picking the resolution corresponding to the best prediction.
 
 In addition, models'  predictions revealed some corner cases where they failed, and the models had to be revised and retrained. For example, I used aggressive regularization and image augmentation for training the keypoints model, and a gentle image augmentation for training the face classification model, which were key to much better performance.
 
